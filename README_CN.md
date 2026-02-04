@@ -96,7 +96,7 @@ curl -X DELETE "http://localhost:8008/delete/文件名.png?password=你的密码
 
 | 变量名 | 默认值 | 说明 |
 |--------|--------|------|
-| `UPLOAD_PASSWORD` | - | 上传密码（必填） |
+| `UPLOAD_PASSWORD` | `123456` | 上传密码（必填） |
 | `STORAGE_DIR` | `~/.file-server/data` | 文件存储路径 |
 | `BASE_URL` | `http://localhost:8008` | 公网访问地址 |
 | `MAX_FILE_SIZE` | `524288000` | 最大文件大小（字节，默认 500MB） |

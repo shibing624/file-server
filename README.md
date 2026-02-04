@@ -96,7 +96,7 @@ Configuration via environment variables or `.env` file:
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `UPLOAD_PASSWORD` | - | Required upload password |
+| `UPLOAD_PASSWORD` | `123456` | Required upload password |
 | `STORAGE_DIR` | `~/.file-server/data` | File storage path |
 | `BASE_URL` | `http://localhost:8008` | Public access URL |
 | `MAX_FILE_SIZE` | `524288000` | Max file size in bytes (500MB) |
