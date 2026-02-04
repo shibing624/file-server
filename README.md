@@ -145,6 +145,8 @@ This project is licensed under the [Apache License 2.0](LICENSE).
 
 - **GitHub Issues**: [Submit an issue](https://github.com/shibing624/file-server/issues)
 - **Email**: [shibing624@126.com](mailto:shibing624@126.com)
+- **WeChat**: Add `xuming624` with note "llm" to join the LLM tech wechat group
+![](https://github.com/shibing624/graphrag-lite/raw/main/docs/wechat.jpeg)
 
 ## Citation
 
