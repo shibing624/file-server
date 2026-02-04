@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  file-server:
+    build: .
+    container_name: file-server
+    restart: unless-stopped
+    ports:
+      - "8008:8008"
+    environment:
+      - UPLOAD_PASSWORD=${UPLOAD_PASSWORD:-changeme}
+      - STORAGE_DIR=/data
+      - BASE_URL=${BASE_URL:-http://localhost:8008}
+      - MAX_FILE_SIZE=${MAX_FILE_SIZE:-524288000}
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+    volumes:
+      - ./data:/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8008/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
+    security_opt:
+      - no-new-privileges:true
+    read_only: true
+    tmpfs:
+      - /tmp:noexec,nosuid,size=100m
