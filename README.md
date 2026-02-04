@@ -3,6 +3,8 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 
+[中文](README_CN.md)
+
 **File Server**: A simple, self-hosted file storage service with password protection.
 
 file-server is a lightweight file storage solution that provides:
@@ -95,7 +97,7 @@ Configuration via environment variables or `.env` file:
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `UPLOAD_PASSWORD` | - | Required upload password |
-| `STORAGE_DIR` | `/var/data/file-server` | File storage path |
+| `STORAGE_DIR` | `~/.file-server/data` | File storage path |
 | `BASE_URL` | `http://localhost:8008` | Public access URL |
 | `MAX_FILE_SIZE` | `524288000` | Max file size in bytes (500MB) |
 | `HOST` | `0.0.0.0` | Server bind address |
@@ -146,7 +148,8 @@ This project is licensed under the [Apache License 2.0](LICENSE).
 - **GitHub Issues**: [Submit an issue](https://github.com/shibing624/file-server/issues)
 - **Email**: [shibing624@126.com](mailto:shibing624@126.com)
 - **WeChat**: Add `xuming624` with note "llm" to join the LLM tech wechat group
-![](https://github.com/shibing624/graphrag-lite/raw/main/docs/wechat.jpeg)
+
+<img src="https://github.com/shibing624/graphrag-lite/raw/main/docs/wechat.jpeg" width="200"/>
 
 ## Citation
 
